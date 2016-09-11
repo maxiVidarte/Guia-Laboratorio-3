@@ -41,11 +41,32 @@ namespace Ejercicio04
                 lst_Lista.Items.Add(textBox1.Text);
             textBox1.Clear();
         }
+        public void actualizarlista()
+        {
+        this.lst_Lista.Items.Clear();
+        }
 
         private void btn_Ordenar_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (radioButton1.Checked)
                 lst_Lista.Sorted = true;
+            else
+            {
+                List<object> lista = new List<object>();
+                int acum = 0;
+                lst_Lista.Sorted = true;
+                for (int i = 0; i < lst_Lista.Items.Count; i++)
+                {
+                   lista.Add(lst_Lista.Items[i]);
+                }
+                this.actualizarlista();
+                lista.Reverse();
+                foreach (object item in lista)
+                {
+                    lst_Lista.Items.Add(item);
+                }
+                
+            }
         }
 
        
