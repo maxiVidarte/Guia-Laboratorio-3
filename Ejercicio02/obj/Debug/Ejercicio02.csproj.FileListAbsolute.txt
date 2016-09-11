@@ -1,0 +1,9 @@
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\bin\Debug\Ejercicio02.exe.config
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.Form1.resources
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.Properties.Resources.resources
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\bin\Debug\Ejercicio02.exe
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\bin\Debug\Ejercicio02.pdb
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.exe
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.pdb
+C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio02\obj\Debug\Ejercicio02.csprojResolveAssemblyReference.cache

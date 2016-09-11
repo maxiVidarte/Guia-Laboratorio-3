@@ -1,0 +1,9 @@
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\bin\Debug\Ejercicio04.exe.config
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\bin\Debug\Ejercicio04.exe
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\bin\Debug\Ejercicio04.pdb
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.frmPrincipal.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.Properties.Resources.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.exe
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio04\obj\Debug\Ejercicio04.pdb
