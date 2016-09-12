@@ -250,7 +250,6 @@
             this.Name = "frmPrincipal";
             this.Text = "Cajero Automatico";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing_1);
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.gpb_dinero.ResumeLayout(false);
             this.gpb_dinero.PerformLayout();
             this.gpb_Billetes.ResumeLayout(false);
