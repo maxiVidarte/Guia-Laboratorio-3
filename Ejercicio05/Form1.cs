@@ -52,12 +52,54 @@ namespace Ejercicio05
         private void txt_Numero_TextChanged(object sender, EventArgs e)
         {
             int numero;
+            int pares= 0;
+            int impares = 0;
+            int auxMax = 0;
+            int auxMin = 10;
+
             bool estaOk;
             estaOk = int.TryParse(txt_Numero.Text,out numero);
             if (estaOk == true)
             {
-                txt_CDC.Text = numero.ToString();
+                
+                for (int i = 0; i < txt_Numero.TextLength; i++)
+                {
+                    if (txt_Numero.Text[i] % 2 == 0)
+                    {
+                        pares += int.Parse(txt_Numero.Text[i].ToString());
+                    }
+                    else
+                        impares += int.Parse(txt_Numero.Text[i].ToString());
+
+                    if (int.Parse(txt_Numero.Text[i].ToString()) > auxMax)
+                    {
+                        auxMax = int.Parse(txt_Numero.Text[i].ToString());
+                    }
+                    if (int.Parse(txt_Numero.Text[i].ToString()) < auxMin)
+                    {
+                        auxMin = int.Parse(txt_Numero.Text[i].ToString());
+                    }
+                   
+                }
+                lst_listaDiv.Items.Clear();
+                for (int i = 1; i <= int.Parse(txt_Numero.Text.ToString()) ; i++)
+                {
+                    if (int.Parse(txt_Numero.Text.ToString()) % i == 0)
+                    {
+                        lst_listaDiv.Items.Add(i);
+                    }
+                }
+                txt_CDC.Text = txt_Numero.TextLength.ToString();
+                txt_STC.Text = (pares + impares).ToString();
+                txt_SCP.Text = pares.ToString();
+                txt_SCI.Text = impares.ToString();
+                txt_CMayor.Text = auxMax.ToString();
+                txt_CMenor.Text = auxMin.ToString();
+
+                   
+                
             }
+
 
         }
 
