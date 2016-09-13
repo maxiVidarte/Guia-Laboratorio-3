@@ -7,3 +7,6 @@ C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Eje
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio07\obj\Debug\Ejercicio07.exe
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio07\obj\Debug\Ejercicio07.pdb
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio07\obj\Debug\Ejercicio07.frm_principal.resources
+C:\Users\alumno.LAB4PC\Desktop\Laboratorio\Ejercicio07\bin\Debug\Ejercicio07.exe.config
+C:\Users\alumno.LAB4PC\Desktop\Laboratorio\Ejercicio07\obj\Debug\Ejercicio07.exe
+C:\Users\alumno.LAB4PC\Desktop\Laboratorio\Ejercicio07\obj\Debug\Ejercicio07.pdb
