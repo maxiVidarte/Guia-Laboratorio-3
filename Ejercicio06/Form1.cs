@@ -30,10 +30,10 @@ namespace Ejercicio06
 
         private void frmPrincipal_FormClosing_1(object sender, FormClosingEventArgs e)
         {
-            //if (MessageBox.Show("Realmente quiere salir?", "Confirmación Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.Yes)
-            //{
-            //    e.Cancel = true;
-            //}
+            if (MessageBox.Show("Realmente quiere salir?", "Confirmación Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != System.Windows.Forms.DialogResult.Yes)
+            {
+                e.Cancel = true;
+            }
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)

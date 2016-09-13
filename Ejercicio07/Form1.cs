@@ -17,32 +17,69 @@ namespace Ejercicio07
         public frm_principal()
         {
             InitializeComponent();
-            this.Load += new EventHandler(Iniciacion);   
-        }
-        private void Iniciacion(object sender, EventArgs e)
-        {
-            
+            this.Load += new EventHandler(Inicializacion);   
         }
 
-        private void Numeros(object sender, KeyEventArgs  e)
-        { 
-            
-        }
-        private void txt_Numero_KeyPress(object sender, KeyPressEventArgs e)
+        private void Inicializacion(object sender, EventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar))
-                e.Handled = false;
-            else if (char.IsControl(e.KeyChar))
-                e.Handled = false;
-            else if (char.IsSeparator(e.KeyChar))
-                e.Handled = false;
-            else
-                e.Handled = true;
+            foreach (Control item in this.grb_numeros.Controls)
+            {
+                if (item is Button)
+                {
+                    Button miBoton = item as Button;
+                    miBoton.Click += new EventHandler(ManejadorCentral);
+                }
+            }
         }
+     
         private static void Calculadora(int numero1, int numero2)
         {
-            
+           
         }
-       
+
+        private void ManejadorCentral(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            txt_Numero.Text = boton.Text;
+
+            foreach (Control item in this.grb_operaciones.Controls)
+            {
+                if (item is Button)
+                {
+                    Button miBoton = item as Button;
+                    miBoton.Click += new EventHandler(Operacion);
+                }
+            }
+            foreach (Control item in this.grb_numeros.Controls)
+            {
+                if (item is Button)
+                {
+                    Button miBoton = item as Button;
+                    miBoton.Click -= new EventHandler(ManejadorCentral);
+                }
+            }
+        }
+        private void Operacion(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            txt_Numero.Text = boton.Text;
+
+            foreach (Control item in this.grb_operaciones.Controls)
+            {
+                if (item is Button)
+                {
+                    Button miBoton = item as Button;
+                    miBoton.Click -= new EventHandler(Operacion);
+                }
+            }
+            foreach (Control item in this.grb_numeros.Controls)
+            {
+                if (item is Button)
+                {
+                    Button miBoton = item as Button;
+                    miBoton.Click += new EventHandler(ManejadorCentral);
+                }
+            }
+        }
     }
 }

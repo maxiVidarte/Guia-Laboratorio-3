@@ -169,7 +169,6 @@
             this.txt_Numero.Size = new System.Drawing.Size(245, 20);
             this.txt_Numero.TabIndex = 1;
             this.txt_Numero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_Numero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numero_KeyPress);
             // 
             // grb_operaciones
             // 
