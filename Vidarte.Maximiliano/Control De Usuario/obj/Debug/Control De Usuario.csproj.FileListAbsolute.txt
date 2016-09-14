@@ -1,0 +1,11 @@
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\bin\Debug\Control De Usuario.exe.config
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\bin\Debug\Control De Usuario.exe
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\bin\Debug\Control De Usuario.pdb
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\bin\Debug\Entidades.dll
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\bin\Debug\Entidades.pdb
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control De Usuario.csprojResolveAssemblyReference.cache
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control_De_Usuario.Form1.resources
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control_De_Usuario.Properties.Resources.resources
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control De Usuario.csproj.GenerateResource.Cache
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control De Usuario.exe
+C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Control De Usuario\obj\Debug\Control De Usuario.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control De Usuario", "Control De Usuario\Control De Usuario.csproj", "{28059A59-29CF-4622-ACE9-898DBDB103C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{3DC61A73-44E3-4240-B4C5-795A2A624782}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28059A59-29CF-4622-ACE9-898DBDB103C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28059A59-29CF-4622-ACE9-898DBDB103C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28059A59-29CF-4622-ACE9-898DBDB103C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28059A59-29CF-4622-ACE9-898DBDB103C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC61A73-44E3-4240-B4C5-795A2A624782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC61A73-44E3-4240-B4C5-795A2A624782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC61A73-44E3-4240-B4C5-795A2A624782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC61A73-44E3-4240-B4C5-795A2A624782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
