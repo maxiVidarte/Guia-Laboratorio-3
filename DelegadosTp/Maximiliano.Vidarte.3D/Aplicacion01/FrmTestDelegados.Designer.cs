@@ -30,6 +30,7 @@
         {
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.txt_actualizar = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // btn_actualizar
@@ -49,6 +50,10 @@
             this.txt_actualizar.Size = new System.Drawing.Size(100, 20);
             this.txt_actualizar.TabIndex = 1;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmTestDelegados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -67,5 +72,6 @@
 
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.TextBox txt_actualizar;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
