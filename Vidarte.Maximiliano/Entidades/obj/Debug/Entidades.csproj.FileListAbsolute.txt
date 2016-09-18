@@ -1,5 +1,0 @@
-C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Entidades\bin\Debug\Entidades.dll
-C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Entidades\bin\Debug\Entidades.pdb
-C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
-C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Entidades\obj\Debug\Entidades.dll
-C:\Users\alumno.LAB4PC\Desktop\Vidarte.Maximiliano\Entidades\obj\Debug\Entidades.pdb

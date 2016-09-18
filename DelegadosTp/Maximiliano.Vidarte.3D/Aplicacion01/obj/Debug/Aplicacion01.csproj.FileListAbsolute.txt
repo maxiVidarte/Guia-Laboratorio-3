@@ -1,0 +1,10 @@
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\bin\Debug\Aplicacion01.exe.config
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\bin\Debug\Aplicacion01.exe
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\bin\Debug\Aplicacion01.pdb
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.frmPrincipal.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.Properties.Resources.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.exe
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.pdb
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.FrmTestDelegados.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.frmDatos.resources

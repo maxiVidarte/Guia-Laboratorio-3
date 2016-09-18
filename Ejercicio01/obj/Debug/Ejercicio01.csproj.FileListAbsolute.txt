@@ -28,3 +28,15 @@ C:\Users\Casa\Desktop\Maximiliano.Vidarte.3D\Ejercicio01\obj\Debug\yo-NG\Windows
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\bin\Debug\es-AR\WindowsFormsApplication1.resources.dll
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\bin\Debug\yo-NG\WindowsFormsApplication1.resources.dll
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\Ejercicio01.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.Form1.es-AR.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.Form1.yo-NG.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\Ejercicio01.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\es-AR\WindowsFormsApplication1.resources.dll
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\yo-NG\WindowsFormsApplication1.resources.dll
