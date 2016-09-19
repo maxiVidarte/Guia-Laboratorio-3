@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Aplicacion01
 {
     public delegate void DelegadoString(string dato);
+    public delegate void DelegadoStream(string st);
 
     public partial class frmPrincipal : Form
     {
         public DelegadoString miDelegado;
+        public DelegadoStream miStream;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -38,6 +41,12 @@ namespace Aplicacion01
             frmDatos frmD = new frmDatos();
             frmD.Owner = this;
             frmD.Show();
+        }
+
+        private void alumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAltaAlumno frmAA = new frmAltaAlumno();
+
         }
 
     }

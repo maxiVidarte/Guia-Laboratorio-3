@@ -8,3 +8,4 @@ C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Del
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.pdb
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.FrmTestDelegados.resources
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.frmDatos.resources
+C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\DelegadosTp\Maximiliano.Vidarte.3D\Aplicacion01\obj\Debug\Aplicacion01.csprojResolveAssemblyReference.cache
