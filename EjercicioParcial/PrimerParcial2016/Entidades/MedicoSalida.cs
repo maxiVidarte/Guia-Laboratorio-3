@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class MedicoSalida:Medico
+    class MedicoSalida : Medico
     {
         private double _salario;
         private DateTime Egreso;
@@ -14,7 +14,8 @@ namespace Entidades
         public double Salario { get { return this.CalcularSalario(); } }
         public DateTime _horarioSalida { get { return this.Egreso; } set { this.Egreso = value; } }
 
-        public MedicoSalida(Medico unMedico):base(unMedico.Nombre,unMedico.Legajo,unMedico.Especialidad)
+        public MedicoSalida(Medico unMedico)
+            : base(unMedico.Nombre, unMedico.Legajo, unMedico.Especialidad)
         {
             this.Egreso = DateTime.Now;
         }

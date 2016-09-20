@@ -23,6 +23,7 @@ namespace Entidades
             this._nombre = nombre;
             this._legajo = legajo;
             this._especialidad = especialidad;
+            this._horarioEntrada = DateTime.Now;
         }
         public int OrdenarPorHorarioEntrada(Medico m1, Medico m2)
         {
@@ -31,6 +32,19 @@ namespace Entidades
         public int OrdenarPorLegajo(Medico m1, Medico m2)
         {
            return string.Compare(m1._legajo, m2._legajo);
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("nombre: ");
+            sb.Append(this._nombre);
+            sb.AppendLine("Legajo: ");
+            sb.Append(this._legajo);
+            sb.AppendLine("Especialidad: ");
+            sb.Append(this._especialidad);
+            sb.AppendLine("horario Entrada: ");
+            sb.Append(this._horarioEntrada);
+            return sb.ToString();
         }
     }
 }
