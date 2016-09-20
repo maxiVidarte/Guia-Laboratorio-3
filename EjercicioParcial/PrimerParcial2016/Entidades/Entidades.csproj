@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enumerados.cs" />
-    <Compile Include="Medicos.cs" />
+    <Compile Include="Medico.cs" />
     <Compile Include="MedicoSalida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
