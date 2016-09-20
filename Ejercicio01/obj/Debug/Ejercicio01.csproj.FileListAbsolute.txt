@@ -40,3 +40,6 @@ C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Eje
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\Ejercicio01.csproj.GenerateResource.Cache
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\es-AR\WindowsFormsApplication1.resources.dll
 C:\Users\Casa\Desktop\Tercer cuatrimestre\Laboratorio III\Guia-Laboratorio-3\Ejercicio01\obj\Debug\yo-NG\WindowsFormsApplication1.resources.dll
+C:\Users\alumno.LAB4PC\Desktop\MV\Ejercicio01\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\alumno.LAB4PC\Desktop\MV\Ejercicio01\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\alumno.LAB4PC\Desktop\MV\Ejercicio01\obj\Debug\WindowsFormsApplication1.pdb
