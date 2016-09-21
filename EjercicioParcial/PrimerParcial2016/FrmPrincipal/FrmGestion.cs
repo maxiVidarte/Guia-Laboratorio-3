@@ -25,8 +25,13 @@ namespace FrmPrincipal
 
         private void btn_Ingreso_Click(object sender, EventArgs e)
         {
+            //DialogResult hola = new System.Windows.Forms.DialogResult();
             FrmMedico frmM = new FrmMedico();
-            frmM.Show();
+            //hola = frmM.ShowDialog(this);
+            if (frmM.ShowDialog(this) == DialogResult.OK)
+            {
+                lst_Medicos.Items.Add("medico agregado");
+            }
         }
 
         private void cmb_especialidad_SelectedIndexChanged(object sender, EventArgs e)

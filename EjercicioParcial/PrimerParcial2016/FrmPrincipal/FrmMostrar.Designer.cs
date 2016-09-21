@@ -30,43 +30,43 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lst_MedicoOff = new System.Windows.Forms.ListBox();
+            this.lst_MedicoOn = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 28);
+            this.label1.Location = new System.Drawing.Point(33, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Trabajando";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 28);
+            this.label2.Location = new System.Drawing.Point(230, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Retirados";
             // 
-            // listBox1
+            // lst_MedicoOff
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(22, 59);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 2;
+            this.lst_MedicoOff.FormattingEnabled = true;
+            this.lst_MedicoOff.Location = new System.Drawing.Point(233, 59);
+            this.lst_MedicoOff.Name = "lst_MedicoOff";
+            this.lst_MedicoOff.Size = new System.Drawing.Size(189, 186);
+            this.lst_MedicoOff.TabIndex = 2;
             // 
-            // listBox2
+            // lst_MedicoOn
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(233, 59);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 95);
-            this.listBox2.TabIndex = 3;
+            this.lst_MedicoOn.FormattingEnabled = true;
+            this.lst_MedicoOn.Location = new System.Drawing.Point(36, 59);
+            this.lst_MedicoOn.Name = "lst_MedicoOn";
+            this.lst_MedicoOn.Size = new System.Drawing.Size(191, 186);
+            this.lst_MedicoOn.TabIndex = 3;
             // 
             // FrmMostrar
             // 
@@ -76,8 +76,8 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(447, 262);
             this.ControlBox = false;
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lst_MedicoOn);
+            this.Controls.Add(this.lst_MedicoOff);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -94,7 +94,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lst_MedicoOff;
+        private System.Windows.Forms.ListBox lst_MedicoOn;
     }
 }

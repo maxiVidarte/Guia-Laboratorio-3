@@ -33,9 +33,9 @@
             this.lbl_Legajo = new System.Windows.Forms.Label();
             this.lbl_Nombre = new System.Windows.Forms.Label();
             this.lbl_Especialidad = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmb_Especialidad = new System.Windows.Forms.ComboBox();
+            this.txt_Legajo = new System.Windows.Forms.TextBox();
+            this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_Aceptar
@@ -46,6 +46,7 @@
             this.btn_Aceptar.TabIndex = 0;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 
             // btn_Cancelar
             // 
@@ -55,6 +56,7 @@
             this.btn_Cancelar.TabIndex = 1;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // lbl_Legajo
             // 
@@ -83,36 +85,37 @@
             this.lbl_Especialidad.TabIndex = 4;
             this.lbl_Especialidad.Text = "Especialidad";
             // 
-            // comboBox1
+            // cmb_Especialidad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmb_Especialidad.FormattingEnabled = true;
+            this.cmb_Especialidad.Location = new System.Drawing.Point(119, 121);
+            this.cmb_Especialidad.Name = "cmb_Especialidad";
+            this.cmb_Especialidad.Size = new System.Drawing.Size(121, 21);
+            this.cmb_Especialidad.TabIndex = 5;
+            this.cmb_Especialidad.SelectedIndexChanged += new System.EventHandler(this.cmb_Especialidad_SelectedIndexChanged);
             // 
-            // textBox1
+            // txt_Legajo
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 6;
+            this.txt_Legajo.Location = new System.Drawing.Point(119, 32);
+            this.txt_Legajo.Name = "txt_Legajo";
+            this.txt_Legajo.Size = new System.Drawing.Size(121, 20);
+            this.txt_Legajo.TabIndex = 6;
             // 
-            // textBox2
+            // txt_Nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 7;
+            this.txt_Nombre.Location = new System.Drawing.Point(119, 78);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(121, 20);
+            this.txt_Nombre.TabIndex = 7;
             // 
             // FrmMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txt_Nombre);
+            this.Controls.Add(this.txt_Legajo);
+            this.Controls.Add(this.cmb_Especialidad);
             this.Controls.Add(this.lbl_Especialidad);
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.lbl_Legajo);
@@ -132,8 +135,8 @@
         protected System.Windows.Forms.Label lbl_Especialidad;
         protected System.Windows.Forms.Button btn_Aceptar;
         protected System.Windows.Forms.Button btn_Cancelar;
-        protected System.Windows.Forms.ComboBox comboBox1;
-        protected System.Windows.Forms.TextBox textBox1;
-        protected System.Windows.Forms.TextBox textBox2;
+        protected System.Windows.Forms.ComboBox cmb_Especialidad;
+        protected System.Windows.Forms.TextBox txt_Legajo;
+        protected System.Windows.Forms.TextBox txt_Nombre;
     }
 }
