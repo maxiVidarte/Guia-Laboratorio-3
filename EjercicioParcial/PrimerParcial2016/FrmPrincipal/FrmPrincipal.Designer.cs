@@ -59,6 +59,7 @@
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
             this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.mostrarToolStripMenuItem.Text = "Mostrar";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -76,6 +77,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -86,10 +88,10 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem gestionDiariaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        protected System.Windows.Forms.MenuStrip menuStrip1;
+        protected System.Windows.Forms.ToolStripMenuItem gestionDiariaToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
 

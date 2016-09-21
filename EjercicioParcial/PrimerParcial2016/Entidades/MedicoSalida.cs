@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class MedicoSalida : Medico
+    public class MedicoSalida : Medico
     {
         private double _salario;
         private DateTime Egreso;

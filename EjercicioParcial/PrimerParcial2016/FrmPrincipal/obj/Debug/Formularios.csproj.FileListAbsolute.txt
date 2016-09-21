@@ -11,3 +11,5 @@ C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipa
 C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipal\obj\Debug\FrmPrincipal.exe
 C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipal\obj\Debug\FrmPrincipal.pdb
 C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipal\obj\Debug\FrmPrincipal.FrmPrincipal.resources
+C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipal\obj\Debug\FrmPrincipal.FrmMedicoHeredado.resources
+C:\Users\alumno.LAB4PC\Desktop\MV\EjercicioParcial\PrimerParcial2016\FrmPrincipal\obj\Debug\FrmPrincipal.FrmMostrar.resources

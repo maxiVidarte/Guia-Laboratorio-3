@@ -127,13 +127,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Aceptar;
-        private System.Windows.Forms.Button btn_Cancelar;
-        private System.Windows.Forms.Label lbl_Legajo;
-        private System.Windows.Forms.Label lbl_Nombre;
-        private System.Windows.Forms.Label lbl_Especialidad;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        protected System.Windows.Forms.Label lbl_Legajo;
+        protected System.Windows.Forms.Label lbl_Nombre;
+        protected System.Windows.Forms.Label lbl_Especialidad;
+        protected System.Windows.Forms.Button btn_Aceptar;
+        protected System.Windows.Forms.Button btn_Cancelar;
+        protected System.Windows.Forms.ComboBox comboBox1;
+        protected System.Windows.Forms.TextBox textBox1;
+        protected System.Windows.Forms.TextBox textBox2;
     }
 }

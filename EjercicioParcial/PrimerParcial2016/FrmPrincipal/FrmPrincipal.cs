@@ -32,6 +32,24 @@ namespace FrmPrincipal
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+             //DialogResult chau =  MessageBox.Show("Desea Salir", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+             //if (chau == DialogResult.Yes)
+             //{
+             //    e.Cancel = false;
+             //}
+             //else
+             //    e.Cancel = true;
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMostrar frmMos = new FrmMostrar();
+            frmMos.Owner = this;
+            frmMos.Show();
         }      
     }
 }

@@ -82,6 +82,12 @@
     <EmbeddedResource Include="FrmMedico.resx">
       <DependentUpon>FrmMedico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicoHeredado.resx">
+      <DependentUpon>FrmMedicoHeredado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrar.resx">
+      <DependentUpon>FrmMostrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
