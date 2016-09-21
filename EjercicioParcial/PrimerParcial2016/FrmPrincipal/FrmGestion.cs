@@ -30,7 +30,8 @@ namespace FrmPrincipal
             //hola = frmM.ShowDialog(this);
             if (frmM.ShowDialog(this) == DialogResult.OK)
             {
-                lst_Medicos.Items.Add("medico agregado");
+                
+                //lst_Medicos.Items.Add();
             }
         }
 
