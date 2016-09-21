@@ -88,6 +88,7 @@
             // cmb_Especialidad
             // 
             this.cmb_Especialidad.FormattingEnabled = true;
+            this.cmb_Especialidad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmb_Especialidad.Location = new System.Drawing.Point(119, 121);
             this.cmb_Especialidad.Name = "cmb_Especialidad";
             this.cmb_Especialidad.Size = new System.Drawing.Size(121, 21);
@@ -113,9 +114,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.cmb_Especialidad);
             this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.txt_Legajo);
-            this.Controls.Add(this.cmb_Especialidad);
             this.Controls.Add(this.lbl_Especialidad);
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.lbl_Legajo);
@@ -135,8 +136,8 @@
         protected System.Windows.Forms.Label lbl_Especialidad;
         protected System.Windows.Forms.Button btn_Aceptar;
         protected System.Windows.Forms.Button btn_Cancelar;
-        protected System.Windows.Forms.ComboBox cmb_Especialidad;
-        protected System.Windows.Forms.TextBox txt_Legajo;
-        protected System.Windows.Forms.TextBox txt_Nombre;
+        protected internal System.Windows.Forms.ComboBox cmb_Especialidad;
+        protected internal System.Windows.Forms.TextBox txt_Legajo;
+        protected internal System.Windows.Forms.TextBox txt_Nombre;
     }
 }

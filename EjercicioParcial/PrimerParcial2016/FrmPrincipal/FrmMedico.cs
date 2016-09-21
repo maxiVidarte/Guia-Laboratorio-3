@@ -16,8 +16,9 @@ namespace FrmPrincipal
         public FrmMedico()
         {
             InitializeComponent();
-            
+
             cmb_Especialidad.Items.Add(eEspecialidades.Cardiologo);
+            cmb_Especialidad.SelectedItem = 1;
             cmb_Especialidad.Items.Add(eEspecialidades.Pediatra);
             cmb_Especialidad.Items.Add(eEspecialidades.Clinico);
         }
@@ -25,7 +26,6 @@ namespace FrmPrincipal
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            //Medico unMedico = new Medico(txt_Nombre,txt_Legajo,);   
             this.DialogResult = DialogResult.OK;
         }
 

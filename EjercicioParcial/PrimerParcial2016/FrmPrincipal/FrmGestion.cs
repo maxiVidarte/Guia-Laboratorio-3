@@ -30,8 +30,8 @@ namespace FrmPrincipal
             //hola = frmM.ShowDialog(this);
             if (frmM.ShowDialog(this) == DialogResult.OK)
             {
-                
-                //lst_Medicos.Items.Add();
+                Medico unMedico = new Medico(frmM.txt_Nombre.Text, frmM.txt_Legajo.Text, eEspecialidades.Cardiologo);
+                lst_Medicos.Items.Add(unMedico);
             }
         }
 
