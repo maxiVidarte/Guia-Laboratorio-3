@@ -18,9 +18,9 @@ namespace FrmPrincipal
             InitializeComponent();
 
             cmb_Especialidad.Items.Add(eEspecialidades.Cardiologo);
-            cmb_Especialidad.SelectedItem = 1;
             cmb_Especialidad.Items.Add(eEspecialidades.Pediatra);
             cmb_Especialidad.Items.Add(eEspecialidades.Clinico);
+            cmb_Especialidad.SelectedIndex = 0;
         }
 
 
@@ -34,9 +34,10 @@ namespace FrmPrincipal
             this.Close();
         }
 
-        private void cmb_Especialidad_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmb_Especialidad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+            e.Handled = true;
         }
+
     }
 }

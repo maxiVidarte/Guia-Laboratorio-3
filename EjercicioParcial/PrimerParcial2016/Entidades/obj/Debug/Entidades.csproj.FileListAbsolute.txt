@@ -8,3 +8,8 @@ C:\Users\maximiliano\Desktop\git\EjercicioParcial\PrimerParcial2016\Entidades\bi
 C:\Users\maximiliano\Desktop\git\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\maximiliano\Desktop\git\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.dll
 C:\Users\maximiliano\Desktop\git\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjercicioParcial\PrimerParcial2016\Entidades\bin\Debug\Entidades.dll
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjercicioParcial\PrimerParcial2016\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.dll
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjercicioParcial\PrimerParcial2016\Entidades\obj\Debug\Entidades.pdb
