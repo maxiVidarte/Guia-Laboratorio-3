@@ -38,11 +38,11 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("nombre: ");
             sb.Append(this._nombre);
-            sb.AppendLine("Legajo: ");
+            sb.AppendLine("     Legajo: ");
             sb.Append(this._legajo);
-            sb.AppendLine("Especialidad: ");
+            sb.AppendLine("     Especialidad: ");
             sb.Append(this._especialidad);
-            sb.AppendLine("horario Entrada: ");
+            sb.AppendLine("     horario Entrada: ");
             sb.Append(this._horarioEntrada);
             return sb.ToString();
         }

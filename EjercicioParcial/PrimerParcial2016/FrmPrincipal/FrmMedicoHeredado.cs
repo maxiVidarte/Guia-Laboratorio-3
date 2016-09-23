@@ -12,9 +12,11 @@ namespace FrmPrincipal
 {
     public partial class FrmMedicoHeredado : FrmMedico
     {
+        
         public FrmMedicoHeredado()
         {
             InitializeComponent();
+            txt_Salario.Text = "hola medico salida";
         }
     }
 }

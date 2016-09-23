@@ -42,6 +42,7 @@
             this.lst_Medicos.Name = "lst_Medicos";
             this.lst_Medicos.Size = new System.Drawing.Size(549, 186);
             this.lst_Medicos.TabIndex = 0;
+            this.lst_Medicos.SelectedIndexChanged += new System.EventHandler(this.lst_Medicos_SelectedIndexChanged);
             // 
             // cmb_Ordenamiento
             // 
@@ -86,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 262);
+            this.ClientSize = new System.Drawing.Size(569, 262);
             this.Controls.Add(this.btn_Ingreso);
             this.Controls.Add(this.btn_Egreso);
             this.Controls.Add(this.btn_Modificacion);

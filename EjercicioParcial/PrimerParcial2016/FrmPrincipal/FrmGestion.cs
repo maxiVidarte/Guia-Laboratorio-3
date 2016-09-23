@@ -75,5 +75,25 @@ namespace FrmPrincipal
         {
             return string.Compare(m1.Especialidad.ToString(), m2.Especialidad.ToString());
         }
+
+        private void lst_Medicos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btn_Modificacion.Click += new EventHandler(Modificar);
+            btn_Modificacion.Click += new EventHandler(Egreso);
+        }
+        public void Modificar(object sender, EventArgs e)
+        {
+            this.btn_Modificacion.Click -= new EventHandler(Modificar);
+            this.btn_Modificacion.Click -= new EventHandler(Egreso);
+            FrmMedico frmM = new FrmMedico();
+            frmM.Show();
+        }
+        public void Egreso(object sender, EventArgs e)
+        {
+            this.btn_Modificacion.Click -= new EventHandler(Modificar);
+            this.btn_Modificacion.Click -= new EventHandler(Egreso);
+            FrmMedicoHeredado frmE = new FrmMedicoHeredado();
+            frmE.Show();
+        }
     }
 }
