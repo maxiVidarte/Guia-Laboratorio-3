@@ -97,16 +97,28 @@ namespace FrmPrincipal
         public void Manejador(object sender, EventArgs e)
         { 
             Button miBoton = (Button) sender;
-            
+            btn_Modificacion.Click -= new EventHandler(Manejador);
+            btn_Egreso.Click -= new EventHandler(Manejador);
+
             if(miBoton.Text =="Modificacion")
             {
                 FrmMedico formulario = new FrmMedico ();
+                Medico miMedico = (Medico)lst_Medicos.SelectedItem;
+                formulario.txt_Legajo.Text = miMedico.Legajo;
+                formulario.txt_Nombre.Text = miMedico.Nombre;
+                if (miMedico.Especialidad == eEspecialidades.Cardiologo)
+                    formulario.cmb_Especialidad.SelectedIndex = 0;
+                else if (miMedico.Especialidad == eEspecialidades.Clinico)
+                    formulario.cmb_Especialidad.SelectedIndex = 1;
+                else
+                    formulario.cmb_Especialidad.SelectedIndex = 2;
                 formulario.ShowDialog();
             }
             
             if (miBoton.Text == "Egreso")
             {
                 FrmMedicoHeredado formulario = new FrmMedicoHeredado();
+
                 formulario.ShowDialog();
             }
             
@@ -117,6 +129,9 @@ namespace FrmPrincipal
             this.btn_Modificacion.Click -= new EventHandler(Modificacion);
             this.btn_Modificacion.Click -= new EventHandler(Egreso);
             FrmMedico frmM = new FrmMedico();
+            Medico miMedico =(Medico)lst_Medicos.SelectedItem ;
+            //frmM.txt_Legajo = miMedico.Legajo.ToString();
+           
             frmM.Show();
         }
         public void Egreso(object sender, EventArgs e)
