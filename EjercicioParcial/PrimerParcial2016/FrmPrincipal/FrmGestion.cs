@@ -90,19 +90,38 @@ namespace FrmPrincipal
 
         private void lst_Medicos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btn_Modificacion.Click += new EventHandler(Modificar);
-            btn_Modificacion.Click += new EventHandler(Egreso);
+            btn_Modificacion.Click += new EventHandler(Manejador);
+            btn_Egreso.Click += new EventHandler(Manejador);
         }
-        public void Modificar(object sender, EventArgs e)
+
+        public void Manejador(object sender, EventArgs e)
+        { 
+            Button miBoton = (Button) sender;
+            
+            if(miBoton.Text =="Modificacion")
+            {
+                FrmMedico formulario = new FrmMedico ();
+                formulario.ShowDialog();
+            }
+            
+            if (miBoton.Text == "Egreso")
+            {
+                FrmMedicoHeredado formulario = new FrmMedicoHeredado();
+                formulario.ShowDialog();
+            }
+            
+
+        }
+        public void Modificacion(object sender, EventArgs e)
         {
-            this.btn_Modificacion.Click -= new EventHandler(Modificar);
+            this.btn_Modificacion.Click -= new EventHandler(Modificacion);
             this.btn_Modificacion.Click -= new EventHandler(Egreso);
             FrmMedico frmM = new FrmMedico();
             frmM.Show();
         }
         public void Egreso(object sender, EventArgs e)
         {
-            this.btn_Modificacion.Click -= new EventHandler(Modificar);
+            this.btn_Modificacion.Click -= new EventHandler(Modificacion);
             this.btn_Modificacion.Click -= new EventHandler(Egreso);
             FrmMedicoHeredado frmE = new FrmMedicoHeredado();
             frmE.Show();

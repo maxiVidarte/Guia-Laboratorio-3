@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+
 namespace FrmPrincipal
 {
     public partial class FrmMedico : Form
