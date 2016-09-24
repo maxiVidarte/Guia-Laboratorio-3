@@ -25,11 +25,18 @@ namespace FrmPrincipal
         private void btn_Ingreso_Click(object sender, EventArgs e)
         {
             FrmMedico frmM = new FrmMedico();
+            eEspecialidades miEspecialidad ;
             if (frmM.ShowDialog(this) == DialogResult.OK)
             {
-                Medico unMedico = new Medico(frmM.txt_Nombre.Text, frmM.txt_Legajo.Text, eEspecialidades.Cardiologo);
-                listaEntrada.Add(unMedico);
-                lst_Medicos.Items.Add(unMedico);
+                if (frmM.cmb_Especialidad.SelectedIndex == 0)
+                    miEspecialidad = eEspecialidades.Cardiologo;
+                else if (frmM.cmb_Especialidad.SelectedIndex == 1)
+                    miEspecialidad = eEspecialidades.Clinico;
+                else
+                    miEspecialidad = eEspecialidades.Pediatra;
+               Medico unMedico = new Medico(frmM.txt_Nombre.Text, frmM.txt_Legajo.Text,miEspecialidad);
+               listaEntrada.Add(unMedico);
+               lst_Medicos.Items.Add(unMedico);
             }
         }
 
@@ -51,7 +58,7 @@ namespace FrmPrincipal
             Comparison<Medico> miComparador = null;
             if (cmb_Ordenamiento.SelectedIndex == 0)
             {
-                miComparador = new Comparison<Medico>(OrdenarPorLegajo);
+                miComparador = new Comparison<Medico>(Entidades.Medico.OrdenarPorLegajo);
             }
             else if (cmb_Ordenamiento.SelectedIndex == 1)
             {
@@ -62,16 +69,21 @@ namespace FrmPrincipal
                 miComparador = new Comparison<Medico>(OrdenarPorEspecialidad);
             }
             listaEntrada.Sort(miComparador);
+            lst_Medicos.Items.Clear();
+            foreach (Medico item in listaEntrada)
+            {
+                lst_Medicos.Items.Add(item);
+            }
         }
-        public static int OrdenarPorLegajo(Medico m1, Medico m2)
+        public int OrdenarPorLegajo(Medico m1, Medico m2)
         {
             return string.Compare(m1.Legajo, m2.Legajo);
         }
-        public static int OrdenarPorNombre(Medico m1, Medico m2)
+        public int OrdenarPorNombre(Medico m1, Medico m2)
         {
             return string.Compare(m1.Nombre, m2.Nombre);
         }
-        public static int OrdenarPorEspecialidad(Medico m1, Medico m2)
+        public int OrdenarPorEspecialidad(Medico m1, Medico m2)
         {
             return string.Compare(m1.Especialidad.ToString(), m2.Especialidad.ToString());
         }

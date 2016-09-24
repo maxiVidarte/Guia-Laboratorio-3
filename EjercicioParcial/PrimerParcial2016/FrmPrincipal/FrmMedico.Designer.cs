@@ -43,7 +43,7 @@
             this.btn_Aceptar.Location = new System.Drawing.Point(19, 218);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Aceptar.TabIndex = 0;
+            this.btn_Aceptar.TabIndex = 3;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
@@ -53,7 +53,7 @@
             this.btn_Cancelar.Location = new System.Drawing.Point(165, 218);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancelar.TabIndex = 1;
+            this.btn_Cancelar.TabIndex = 4;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
@@ -94,7 +94,7 @@
             this.cmb_Especialidad.Name = "cmb_Especialidad";
             this.cmb_Especialidad.Size = new System.Drawing.Size(121, 21);
             this.cmb_Especialidad.Sorted = true;
-            this.cmb_Especialidad.TabIndex = 5;
+            this.cmb_Especialidad.TabIndex = 2;
             this.cmb_Especialidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmb_Especialidad_KeyPress);
             // 
             // txt_Legajo
@@ -102,14 +102,14 @@
             this.txt_Legajo.Location = new System.Drawing.Point(119, 32);
             this.txt_Legajo.Name = "txt_Legajo";
             this.txt_Legajo.Size = new System.Drawing.Size(121, 20);
-            this.txt_Legajo.TabIndex = 6;
+            this.txt_Legajo.TabIndex = 0;
             // 
             // txt_Nombre
             // 
             this.txt_Nombre.Location = new System.Drawing.Point(119, 78);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(121, 20);
-            this.txt_Nombre.TabIndex = 7;
+            this.txt_Nombre.TabIndex = 1;
             // 
             // FrmMedico
             // 

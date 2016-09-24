@@ -25,15 +25,15 @@ namespace Entidades
             this._especialidad = especialidad;
             this._horarioEntrada = DateTime.Now;
         }
-        public int OrdenarPorHorarioEntrada(Medico m1, Medico m2)
+        public static int OrdenarPorHorarioEntrada(Medico m1, Medico m2)
         {
            return DateTime.Compare(m1._horarioEntrada, m2._horarioEntrada);
         }
-        public int OrdenarPorLegajo(Medico m1, Medico m2)
+        public static int OrdenarPorLegajo(Medico m1, Medico m2)
         {
            return string.Compare(m1._legajo, m2._legajo);
         }
-        public override string ToString()
+         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("nombre: ");
