@@ -99,7 +99,7 @@ namespace FrmPrincipal
             Button miBoton = (Button) sender;
             btn_Modificacion.Click -= new EventHandler(Manejador);
             btn_Egreso.Click -= new EventHandler(Manejador);
-
+            
             if(miBoton.Text =="Modificacion")
             {
                 FrmMedico formulario = new FrmMedico ();
@@ -112,7 +112,20 @@ namespace FrmPrincipal
                     formulario.cmb_Especialidad.SelectedIndex = 1;
                 else
                     formulario.cmb_Especialidad.SelectedIndex = 2;
-                formulario.ShowDialog();
+                if (formulario.ShowDialog(this) == DialogResult.OK)
+                {
+                    eEspecialidades miEspecialidad;
+                    listaEntrada.Remove((Medico)lst_Medicos.SelectedItem);
+                    if (formulario.cmb_Especialidad.SelectedIndex == 0)
+                        miEspecialidad = eEspecialidades.Cardiologo;
+                    else if (formulario.cmb_Especialidad.SelectedIndex == 1)
+                        miEspecialidad = eEspecialidades.Clinico;
+                    else
+                        miEspecialidad = eEspecialidades.Pediatra;
+                    Medico unMedico = new Medico(formulario.txt_Nombre.Text, formulario.txt_Legajo.Text, miEspecialidad);
+                    listaEntrada.Add(unMedico);
+                    ActualizarLista(listaEntrada);
+                }
             }
             
             if (miBoton.Text == "Egreso")
@@ -121,25 +134,15 @@ namespace FrmPrincipal
 
                 formulario.ShowDialog();
             }
-            
+        }
+        public void ActualizarLista(List<Medico> miMedico)
+        {
+            lst_Medicos.Items.Clear();
+            foreach (Medico item in miMedico)
+            {
+                lst_Medicos.Items.Add(item);
+            }
+        }
 
-        }
-        public void Modificacion(object sender, EventArgs e)
-        {
-            this.btn_Modificacion.Click -= new EventHandler(Modificacion);
-            this.btn_Modificacion.Click -= new EventHandler(Egreso);
-            FrmMedico frmM = new FrmMedico();
-            Medico miMedico =(Medico)lst_Medicos.SelectedItem ;
-            //frmM.txt_Legajo = miMedico.Legajo.ToString();
-           
-            frmM.Show();
-        }
-        public void Egreso(object sender, EventArgs e)
-        {
-            this.btn_Modificacion.Click -= new EventHandler(Modificacion);
-            this.btn_Modificacion.Click -= new EventHandler(Egreso);
-            FrmMedicoHeredado frmE = new FrmMedicoHeredado();
-            frmE.Show();
-        }
     }
 }
