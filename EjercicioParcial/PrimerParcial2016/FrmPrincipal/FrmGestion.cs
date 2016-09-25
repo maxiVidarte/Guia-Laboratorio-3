@@ -104,27 +104,30 @@ namespace FrmPrincipal
             {
                 FrmMedico formulario = new FrmMedico ();
                 Medico miMedico = (Medico)lst_Medicos.SelectedItem;
-                formulario.txt_Legajo.Text = miMedico.Legajo;
-                formulario.txt_Nombre.Text = miMedico.Nombre;
-                if (miMedico.Especialidad == eEspecialidades.Cardiologo)
-                    formulario.cmb_Especialidad.SelectedIndex = 0;
-                else if (miMedico.Especialidad == eEspecialidades.Clinico)
-                    formulario.cmb_Especialidad.SelectedIndex = 1;
-                else
-                    formulario.cmb_Especialidad.SelectedIndex = 2;
-                if (formulario.ShowDialog(this) == DialogResult.OK)
+                if (miMedico != null)
                 {
-                    eEspecialidades miEspecialidad;
-                    listaEntrada.Remove((Medico)lst_Medicos.SelectedItem);
-                    if (formulario.cmb_Especialidad.SelectedIndex == 0)
-                        miEspecialidad = eEspecialidades.Cardiologo;
-                    else if (formulario.cmb_Especialidad.SelectedIndex == 1)
-                        miEspecialidad = eEspecialidades.Clinico;
+                    formulario.txt_Legajo.Text = miMedico.Legajo;
+                    formulario.txt_Nombre.Text = miMedico.Nombre;
+                    if (miMedico.Especialidad == eEspecialidades.Cardiologo)
+                        formulario.cmb_Especialidad.SelectedIndex = 0;
+                    else if (miMedico.Especialidad == eEspecialidades.Clinico)
+                        formulario.cmb_Especialidad.SelectedIndex = 1;
                     else
-                        miEspecialidad = eEspecialidades.Pediatra;
-                    Medico unMedico = new Medico(formulario.txt_Nombre.Text, formulario.txt_Legajo.Text, miEspecialidad);
-                    listaEntrada.Add(unMedico);
-                    ActualizarLista(listaEntrada);
+                        formulario.cmb_Especialidad.SelectedIndex = 2;
+                    if (formulario.ShowDialog(this) == DialogResult.OK)
+                    {
+                        eEspecialidades miEspecialidad;
+                        if (formulario.cmb_Especialidad.SelectedIndex == 0)
+                            miEspecialidad = eEspecialidades.Cardiologo;
+                        else if (formulario.cmb_Especialidad.SelectedIndex == 1)
+                            miEspecialidad = eEspecialidades.Clinico;
+                        else
+                            miEspecialidad = eEspecialidades.Pediatra;
+                        listaEntrada.Remove((Medico)lst_Medicos.SelectedItem);
+                        Medico unMedico = new Medico(formulario.txt_Nombre.Text, formulario.txt_Legajo.Text, miEspecialidad);
+                        listaEntrada.Add(unMedico);
+                        ActualizarLista(listaEntrada);
+                    }
                 }
             }
             
