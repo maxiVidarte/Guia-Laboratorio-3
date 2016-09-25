@@ -25,7 +25,7 @@ namespace FrmPrincipal
         }
 
 
-        private virtual void btn_Aceptar_Click(object sender, EventArgs e)
+        public virtual void btn_Aceptar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
         }
