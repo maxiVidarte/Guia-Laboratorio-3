@@ -31,7 +31,15 @@ namespace Entidades
         }
         public static int OrdenarPorLegajo(Medico m1, Medico m2)
         {
-           return string.Compare(m1._legajo, m2._legajo);
+            long valor1, valor2;
+            valor1 = int.Parse(m1._legajo);
+            valor2 = int.Parse(m2._legajo);
+            if (valor1 < valor2)
+                return -1;
+            else if (valor1 == valor2)
+                return 0;
+            else
+                return 1;
         }
          public override string ToString()
         {
