@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{0B7E71E8-3F42-48A8-81EB-09642700D722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formularios", "Formularios\Formularios.csproj", "{C7659617-BF90-4ECE-9DC6-FEFD0CB95070}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B7E71E8-3F42-48A8-81EB-09642700D722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7E71E8-3F42-48A8-81EB-09642700D722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7E71E8-3F42-48A8-81EB-09642700D722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7E71E8-3F42-48A8-81EB-09642700D722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7659617-BF90-4ECE-9DC6-FEFD0CB95070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7659617-BF90-4ECE-9DC6-FEFD0CB95070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7659617-BF90-4ECE-9DC6-FEFD0CB95070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7659617-BF90-4ECE-9DC6-FEFD0CB95070}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

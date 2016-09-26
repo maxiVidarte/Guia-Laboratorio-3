@@ -1,0 +1,13 @@
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\bin\Debug\Formularios.exe.config
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\bin\Debug\Formularios.exe
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\bin\Debug\Formularios.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\bin\Debug\Entidades.dll
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\bin\Debug\Entidades.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.FrmAnimal.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.FrmPrincipal.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.Properties.Resources.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.exe
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Formularios\obj\Debug\Formularios.FrmMascota.resources

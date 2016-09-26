@@ -1,0 +1,5 @@
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\SegundoModeloParcial\ModeloParcial2\Entidades\obj\Debug\Entidades.pdb

@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 28);
+            this.label1.Location = new System.Drawing.Point(9, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 28);
+            this.label2.Location = new System.Drawing.Point(486, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 1;
@@ -55,17 +55,17 @@
             // lst_MedicoOff
             // 
             this.lst_MedicoOff.FormattingEnabled = true;
-            this.lst_MedicoOff.Location = new System.Drawing.Point(233, 59);
+            this.lst_MedicoOff.Location = new System.Drawing.Point(489, 59);
             this.lst_MedicoOff.Name = "lst_MedicoOff";
-            this.lst_MedicoOff.Size = new System.Drawing.Size(189, 186);
+            this.lst_MedicoOff.Size = new System.Drawing.Size(501, 186);
             this.lst_MedicoOff.TabIndex = 2;
             // 
             // lst_MedicoOn
             // 
             this.lst_MedicoOn.FormattingEnabled = true;
-            this.lst_MedicoOn.Location = new System.Drawing.Point(36, 59);
+            this.lst_MedicoOn.Location = new System.Drawing.Point(12, 59);
             this.lst_MedicoOn.Name = "lst_MedicoOn";
-            this.lst_MedicoOn.Size = new System.Drawing.Size(191, 186);
+            this.lst_MedicoOn.Size = new System.Drawing.Size(471, 186);
             this.lst_MedicoOn.TabIndex = 3;
             // 
             // FrmMostrar
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(447, 262);
+            this.ClientSize = new System.Drawing.Size(1035, 262);
             this.ControlBox = false;
             this.Controls.Add(this.lst_MedicoOn);
             this.Controls.Add(this.lst_MedicoOff);
