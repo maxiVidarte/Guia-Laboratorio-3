@@ -33,8 +33,6 @@
             this.btn_Modificacion = new System.Windows.Forms.Button();
             this.btn_Egreso = new System.Windows.Forms.Button();
             this.btn_Ingreso = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lst_Medicos
@@ -44,7 +42,6 @@
             this.lst_Medicos.Name = "lst_Medicos";
             this.lst_Medicos.Size = new System.Drawing.Size(549, 186);
             this.lst_Medicos.TabIndex = 0;
-            //this.lst_Medicos.Click += new System.EventHandler(this.lst_Medicos_SelectedIndexChanged);
             // 
             // cmb_Ordenamiento
             // 
@@ -85,29 +82,11 @@
             this.btn_Ingreso.UseVisualStyleBackColor = true;
             this.btn_Ingreso.Click += new System.EventHandler(this.btn_Ingreso_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(568, 22);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(242, 225);
-            this.listBox1.TabIndex = 5;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(817, 22);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(269, 225);
-            this.listBox2.TabIndex = 6;
-            // 
             // FrmGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 262);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(575, 262);
             this.Controls.Add(this.btn_Ingreso);
             this.Controls.Add(this.btn_Egreso);
             this.Controls.Add(this.btn_Modificacion);
@@ -127,8 +106,6 @@
         protected System.Windows.Forms.Button btn_Egreso;
         protected System.Windows.Forms.Button btn_Ingreso;
         protected System.Windows.Forms.ListBox lst_Medicos;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
 
     }
 }

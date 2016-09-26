@@ -38,6 +38,8 @@ namespace FrmPrincipal
                Medico unMedico = new Medico(frmM.txt_Nombre.Text, frmM.txt_Legajo.Text,miEspecialidad);
                listaEntrada.Add(unMedico);
                this.ActualizarLista(listaEntrada);
+               FrmPrincipal miContenedor = (FrmPrincipal)this.Owner;
+               miContenedor.miDelegado(listaEntrada, listaSalida);
                //lst_Medicos.Items.Add(unMedico);
             }
         }
@@ -74,6 +76,8 @@ namespace FrmPrincipal
             listaEntrada.Sort(miComparador);
             lst_Medicos.Items.Clear();
             this.ActualizarLista(listaEntrada);
+            FrmPrincipal miContenedor = (FrmPrincipal)this.Owner;
+            miContenedor.miDelegado(listaEntrada, listaSalida);
             //foreach (Medico item in listaEntrada)
             //{
             //    lst_Medicos.Items.Add(item);
@@ -172,26 +176,23 @@ namespace FrmPrincipal
                     
                    
                     listaSalida.Add(miMedicoSalida);
-                    listBox2.Items.Add(miMedicoSalida);
                     listaEntrada.Remove((Medico)lst_Medicos.SelectedItem);
                     this.ActualizarLista(listaEntrada);
                     
                 }
+                
             }
+            FrmPrincipal miContenedor = (FrmPrincipal)this.Owner;
+            miContenedor.miDelegado(listaEntrada, listaSalida);
             lst_Medicos.SelectedIndexChanged += new EventHandler(lst_Medicos_SelectedIndexChanged);
         }
         public void ActualizarLista(List<Medico> miMedico)
         {
             lst_Medicos.Items.Clear();
-            listBox1.Items.Clear();
             foreach (Medico item in miMedico)
             {
                 lst_Medicos.Items.Add(item);
-                listBox1.Items.Add(item);
             }
         }
-
-     
-
     }
 }

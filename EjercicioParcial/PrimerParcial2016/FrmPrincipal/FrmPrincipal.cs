@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace FrmPrincipal
 {
+    public delegate void DelegadoList(List<Medico> dato1,List<MedicoSalida> dato2);
     public partial class FrmPrincipal : Form
     {
+        public DelegadoList miDelegado;
         public FrmPrincipal()
         {
             InitializeComponent();
