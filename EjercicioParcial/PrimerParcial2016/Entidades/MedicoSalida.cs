@@ -25,14 +25,14 @@ namespace Entidades
             TimeSpan intervalo1 = this.Egreso.Subtract(base.Ingreso);
             if (base.Especialidad == eEspecialidades.Cardiologo)
             {
-                return intervalo1.Minutes * 55;
+                return intervalo1.Seconds * 55;
             }
             else if (base.Especialidad == eEspecialidades.Clinico)
             {
-                return intervalo1.Minutes * 50;
+                return intervalo1.Seconds * 50;
             }
             else
-                return intervalo1.Minutes * 45;
+                return intervalo1.Seconds * 45;
         }
     }
 }

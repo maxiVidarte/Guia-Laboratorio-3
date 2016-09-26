@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,12 +37,14 @@ namespace FrmPrincipal
                     miEspecialidad = eEspecialidades.Pediatra;
                Medico unMedico = new Medico(frmM.txt_Nombre.Text, frmM.txt_Legajo.Text,miEspecialidad);
                listaEntrada.Add(unMedico);
-               lst_Medicos.Items.Add(unMedico);
+               this.ActualizarLista(listaEntrada);
+               //lst_Medicos.Items.Add(unMedico);
             }
         }
 
         private void FrmGestion_Load(object sender, EventArgs e)
         {
+            lst_Medicos.SelectedIndexChanged += new EventHandler(lst_Medicos_SelectedIndexChanged);
             cmb_Ordenamiento.Items.Add("legajo");
             cmb_Ordenamiento.Items.Add("nombre");
             cmb_Ordenamiento.Items.Add("especialidad");
@@ -70,10 +73,11 @@ namespace FrmPrincipal
             }
             listaEntrada.Sort(miComparador);
             lst_Medicos.Items.Clear();
-            foreach (Medico item in listaEntrada)
-            {
-                lst_Medicos.Items.Add(item);
-            }
+            this.ActualizarLista(listaEntrada);
+            //foreach (Medico item in listaEntrada)
+            //{
+            //    lst_Medicos.Items.Add(item);
+            //}
         }
         public int OrdenarPorLegajo(Medico m1, Medico m2)
         {
@@ -92,6 +96,7 @@ namespace FrmPrincipal
         {
             btn_Modificacion.Click += new EventHandler(Manejador);
             btn_Egreso.Click += new EventHandler(Manejador);
+            lst_Medicos.SelectedIndexChanged -= new EventHandler(lst_Medicos_SelectedIndexChanged);
         }
 
         public void Manejador(object sender, EventArgs e)
@@ -99,6 +104,7 @@ namespace FrmPrincipal
             Button miBoton = (Button) sender;
             btn_Modificacion.Click -= new EventHandler(Manejador);
             btn_Egreso.Click -= new EventHandler(Manejador);
+            
             
             if(miBoton.Text =="Modificacion")
             {
@@ -108,6 +114,7 @@ namespace FrmPrincipal
                 {
                     formulario.txt_Legajo.Text = miMedico.Legajo;
                     formulario.txt_Nombre.Text = miMedico.Nombre;
+                    
                     if (miMedico.Especialidad == eEspecialidades.Cardiologo)
                         formulario.cmb_Especialidad.SelectedIndex = 0;
                     else if (miMedico.Especialidad == eEspecialidades.Clinico)
@@ -133,19 +140,58 @@ namespace FrmPrincipal
             
             if (miBoton.Text == "Egreso")
             {
-                FrmMedicoHeredado formulario = new FrmMedicoHeredado();
-
-                formulario.ShowDialog();
+                FrmMedicoHeredado formulario2 = new FrmMedicoHeredado();
+                MedicoSalida miMedicoSalida = new MedicoSalida((Medico)this.lst_Medicos.SelectedItem);
+                formulario2.txt_Legajo.Text = miMedicoSalida.Legajo;
+                formulario2.txt_Nombre.Text = miMedicoSalida.Nombre;
+                if (miMedicoSalida.Especialidad == eEspecialidades.Cardiologo)
+                {
+                    formulario2.cmb_Especialidad.SelectedIndex = 0;
+                }
+                else if (miMedicoSalida.Especialidad == eEspecialidades.Clinico)
+                {
+                    formulario2.cmb_Especialidad.SelectedIndex = 1;
+                }
+                else
+                    formulario2.cmb_Especialidad.SelectedIndex = 2;
+                miMedicoSalida._horarioSalida = DateTime.Now;
+                formulario2.txt_Salario.Text = miMedicoSalida.Salario.ToString("N",new CultureInfo("en-us"));
+                if (formulario2.ShowDialog(this) == DialogResult.OK)
+                {
+                    eEspecialidades miEspecialidad;
+                    if (formulario2.cmb_Especialidad.SelectedIndex == 0)
+                    {
+                        miEspecialidad = eEspecialidades.Cardiologo;
+                    }
+                    else if (formulario2.cmb_Especialidad.SelectedIndex == 1)
+                    {
+                        miEspecialidad = eEspecialidades.Clinico;
+                    }
+                    else
+                        miEspecialidad = eEspecialidades.Pediatra;
+                    
+                   
+                    listaSalida.Add(miMedicoSalida);
+                    listBox2.Items.Add(miMedicoSalida);
+                    listaEntrada.Remove((Medico)lst_Medicos.SelectedItem);
+                    this.ActualizarLista(listaEntrada);
+                    
+                }
             }
+            lst_Medicos.SelectedIndexChanged += new EventHandler(lst_Medicos_SelectedIndexChanged);
         }
         public void ActualizarLista(List<Medico> miMedico)
         {
             lst_Medicos.Items.Clear();
+            listBox1.Items.Clear();
             foreach (Medico item in miMedico)
             {
                 lst_Medicos.Items.Add(item);
+                listBox1.Items.Add(item);
             }
         }
+
+     
 
     }
 }

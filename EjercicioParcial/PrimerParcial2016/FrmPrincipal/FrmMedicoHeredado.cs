@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Entidades;
 namespace FrmPrincipal
 {
     public partial class FrmMedicoHeredado : FrmMedico
@@ -15,8 +15,8 @@ namespace FrmPrincipal
         
         public FrmMedicoHeredado()
         {
+            
             InitializeComponent();
-            txt_Salario.Text = "hola medico salida";
         }
     }
 }
