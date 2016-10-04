@@ -1,0 +1,14 @@
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\bin\Debug\Formularios.exe.config
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\bin\Debug\Formularios.exe
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\bin\Debug\Formularios.pdb
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\bin\Debug\Entidades.dll
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\bin\Debug\Entidades.pdb
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.csprojResolveAssemblyReference.cache
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.FrmCuenta.resources
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.Properties.Resources.resources
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.csproj.GenerateResource.Cache
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.exe
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.pdb
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.FrmPrincipal.resources
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.FrmCuentaOffShore.resources
+D:\primerParcial\Vidarte.Maximiliano.3D\Formularios\obj\Debug\Formularios.FrmMostrar.resources

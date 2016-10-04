@@ -1,0 +1,5 @@
+D:\primerParcial\Vidarte.Maximiliano.3D\Entidades\bin\Debug\Entidades.dll
+D:\primerParcial\Vidarte.Maximiliano.3D\Entidades\bin\Debug\Entidades.pdb
+D:\primerParcial\Vidarte.Maximiliano.3D\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\primerParcial\Vidarte.Maximiliano.3D\Entidades\obj\Debug\Entidades.dll
+D:\primerParcial\Vidarte.Maximiliano.3D\Entidades\obj\Debug\Entidades.pdb
