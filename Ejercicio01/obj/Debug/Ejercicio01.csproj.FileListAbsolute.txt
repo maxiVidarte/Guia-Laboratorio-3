@@ -46,3 +46,6 @@ C:\Users\alumno.LAB4PC\Desktop\MV\Ejercicio01\obj\Debug\WindowsFormsApplication1
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\Ejercicio01\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\Ejercicio01\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\alumno.LAB4PC\Desktop\mav\Ejercicio01\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\alumno.LAB4PC\Desktop\mav\Ejercicio01\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\alumno.LAB4PC\Desktop\mav\Ejercicio01\obj\Debug\WindowsFormsApplication1.pdb
