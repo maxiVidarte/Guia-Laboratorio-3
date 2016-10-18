@@ -8,4 +8,11 @@ select * from dbo.Proveedores where Localidad = 'Capital'
 select * from dbo.Envios where Cantidad >= 200 and Cantidad <= 300
 
 /*4)*/
+select sum(Cantidad) as Cantidad from dbo.Envios
 
+/*5)*/
+
+
+
+
+  
