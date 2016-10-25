@@ -121,25 +121,26 @@
             this.gpb_Mostrar.Controls.Add(this.btn_MPCSP);
             this.gpb_Mostrar.Location = new System.Drawing.Point(206, 12);
             this.gpb_Mostrar.Name = "gpb_Mostrar";
-            this.gpb_Mostrar.Size = new System.Drawing.Size(377, 288);
+            this.gpb_Mostrar.Size = new System.Drawing.Size(382, 288);
             this.gpb_Mostrar.TabIndex = 0;
             this.gpb_Mostrar.TabStop = false;
             this.gpb_Mostrar.Text = "Mostrar";
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(187, 205);
+            this.txtFiltro.Location = new System.Drawing.Point(198, 205);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(183, 20);
+            this.txtFiltro.Size = new System.Drawing.Size(172, 20);
             this.txtFiltro.TabIndex = 6;
             // 
             // btn_MPDLLIEET
             // 
             this.btn_MPDLLIEET.Location = new System.Drawing.Point(7, 205);
             this.btn_MPDLLIEET.Name = "btn_MPDLLIEET";
-            this.btn_MPDLLIEET.Size = new System.Drawing.Size(174, 33);
+            this.btn_MPDLLIEET.Size = new System.Drawing.Size(185, 33);
             this.btn_MPDLLIEET.TabIndex = 5;
             this.btn_MPDLLIEET.Text = "5- Mostrar Proveedores de la localidad ingresada en el txtFiltro";
+            this.btn_MPDLLIEET.UseCompatibleTextRendering = true;
             this.btn_MPDLLIEET.UseVisualStyleBackColor = true;
             // 
             // lst_lista
@@ -157,6 +158,7 @@
             this.btn_MPDLLQ.Size = new System.Drawing.Size(183, 30);
             this.btn_MPDLLQ.TabIndex = 3;
             this.btn_MPDLLQ.Text = "4- Mostrar Proveedores de la localidad \"Quilmes\"";
+            this.btn_MPDLLQ.UseCompatibleTextRendering = true;
             this.btn_MPDLLQ.UseVisualStyleBackColor = true;
             this.btn_MPDLLQ.Click += new System.EventHandler(this.btn_MPDLLQ_Click);
             // 
@@ -167,6 +169,7 @@
             this.btn_MPCPCSL.Size = new System.Drawing.Size(174, 30);
             this.btn_MPCPCSL.TabIndex = 2;
             this.btn_MPCPCSL.Text = "3- Mostrar Productos con Proveedor con su Localidad";
+            this.btn_MPCPCSL.UseCompatibleTextRendering = true;
             this.btn_MPCPCSL.UseVisualStyleBackColor = true;
             this.btn_MPCPCSL.Click += new System.EventHandler(this.btn_MPCPCSL_Click);
             // 
@@ -177,6 +180,7 @@
             this.btn_MPCSL.Size = new System.Drawing.Size(183, 30);
             this.btn_MPCSL.TabIndex = 1;
             this.btn_MPCSL.Text = "2- Mostrar Proveedor con su Localidad";
+            this.btn_MPCSL.UseCompatibleTextRendering = true;
             this.btn_MPCSL.UseVisualStyleBackColor = true;
             this.btn_MPCSL.Click += new System.EventHandler(this.btn_MPCSL_Click);
             // 
@@ -187,6 +191,7 @@
             this.btn_MPCSP.Size = new System.Drawing.Size(174, 30);
             this.btn_MPCSP.TabIndex = 0;
             this.btn_MPCSP.Text = "1- Mostrar Productos Con su Proveedor";
+            this.btn_MPCSP.UseCompatibleTextRendering = true;
             this.btn_MPCSP.UseVisualStyleBackColor = true;
             this.btn_MPCSP.Click += new System.EventHandler(this.btn_MPCSP_Click);
             // 
@@ -194,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 304);
+            this.ClientSize = new System.Drawing.Size(750, 304);
             this.Controls.Add(this.gpb_Mostrar);
             this.Controls.Add(this.gpb_Inicializacion);
             this.Name = "EjercicioDataSet";

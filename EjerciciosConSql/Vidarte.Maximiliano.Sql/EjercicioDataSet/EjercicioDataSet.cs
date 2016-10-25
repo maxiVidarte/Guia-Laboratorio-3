@@ -169,7 +169,7 @@ namespace EjercicioDataSet
              * 
              */
             this.ActualizarLista();
-            DataRow[] filaLocalidad = MiBase.Tables["Localidades"].Select("Localidad = Quilmes");
+            DataRow[] filaLocalidad = MiBase.Tables["Localidades"].Select("Localidad = 'Quilmes'");
             DataRow[] filashijas = filaLocalidad[0].GetChildRows("Fk_Proveedores_Localidad");
             foreach (DataRow f in filashijas)
             {
@@ -196,11 +196,8 @@ namespace EjercicioDataSet
         private void btn_MPCPCSL_Click(object sender, EventArgs e)
         {
             this.ActualizarLista();
-            StringBuilder sb = new StringBuilder();
             foreach (DataRow fila in MiBase.Tables["Productos"].Rows)
             {
-                DataRow filapadre = fila.GetParentRow("Fk_Productos_Proveedores");
-              
                
             }
         }
