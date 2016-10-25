@@ -7,3 +7,12 @@ C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.Sql\Eje
 C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.csproj.GenerateResource.Cache
 C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.exe
 C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\bin\Debug\EjercicioDataSet.exe.config
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.exe
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\bin\Debug\EjercicioDataSet.exe
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\bin\Debug\EjercicioDataSet.pdb
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.csprojResolveAssemblyReference.cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.EjercicioDataSet.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.Properties.Resources.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.Sql\EjercicioDataSet\obj\Debug\EjercicioDataSet.csproj.GenerateResource.Cache

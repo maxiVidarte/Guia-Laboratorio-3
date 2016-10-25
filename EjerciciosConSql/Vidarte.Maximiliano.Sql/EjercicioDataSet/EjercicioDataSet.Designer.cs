@@ -88,6 +88,7 @@
             this.btn_CProductos.TabIndex = 4;
             this.btn_CProductos.Text = "Cargar Productos";
             this.btn_CProductos.UseVisualStyleBackColor = true;
+            this.btn_CProductos.Click += new System.EventHandler(this.btn_CProductos_Click);
             // 
             // btn_CProveedores
             // 
@@ -167,6 +168,7 @@
             this.btn_MPCPCSL.TabIndex = 2;
             this.btn_MPCPCSL.Text = "3- Mostrar Productos con Proveedor con su Localidad";
             this.btn_MPCPCSL.UseVisualStyleBackColor = true;
+            this.btn_MPCPCSL.Click += new System.EventHandler(this.btn_MPCPCSL_Click);
             // 
             // btn_MPCSL
             // 
@@ -176,6 +178,7 @@
             this.btn_MPCSL.TabIndex = 1;
             this.btn_MPCSL.Text = "2- Mostrar Proveedor con su Localidad";
             this.btn_MPCSL.UseVisualStyleBackColor = true;
+            this.btn_MPCSL.Click += new System.EventHandler(this.btn_MPCSL_Click);
             // 
             // btn_MPCSP
             // 
