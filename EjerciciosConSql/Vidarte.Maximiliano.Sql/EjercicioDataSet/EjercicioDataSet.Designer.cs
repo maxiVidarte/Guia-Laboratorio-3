@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 304);
+            this.ClientSize = new System.Drawing.Size(596, 304);
             this.Controls.Add(this.gpb_Mostrar);
             this.Controls.Add(this.gpb_Inicializacion);
             this.Name = "EjercicioDataSet";
