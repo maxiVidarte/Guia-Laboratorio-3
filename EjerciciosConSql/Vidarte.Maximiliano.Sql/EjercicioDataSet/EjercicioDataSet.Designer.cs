@@ -142,6 +142,7 @@
             this.btn_MPDLLIEET.Text = "5- Mostrar Proveedores de la localidad ingresada en el txtFiltro";
             this.btn_MPDLLIEET.UseCompatibleTextRendering = true;
             this.btn_MPDLLIEET.UseVisualStyleBackColor = true;
+            this.btn_MPDLLIEET.Click += new System.EventHandler(this.btn_MPDLLIEET_Click);
             // 
             // lst_lista
             // 

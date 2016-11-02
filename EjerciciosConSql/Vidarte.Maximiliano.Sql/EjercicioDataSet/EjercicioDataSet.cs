@@ -202,6 +202,17 @@ namespace EjercicioDataSet
             }
         }
 
+        private void btn_MPDLLIEET_Click(object sender, EventArgs e)
+        {
+            this.ActualizarLista();
+            DataRow[] filaLocalidad = MiBase.Tables["Localidades"].Select("Localidad = "+txtFiltro.Text.Replace("'","''"));
+            DataRow[] filashijas = filaLocalidad[0].GetChildRows("Fk_Proveedores_Localidad");
+            foreach (DataRow f in filashijas)
+            {
+                this.lst_lista.Items.Add(f["Nombre"].ToString());
+            }
+        }
+
         
 
     }

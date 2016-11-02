@@ -61,3 +61,9 @@ namespace EjemploSQL
         }
     }
 }
+/*
+ * sqlCommando c = "insert into dbo.Persona(Nombre, Dni) values (@Nombre, @Dni)"
+ * sqlParameter p = new sqlParameter("@Dni", dtyp.varchar, 50 , "Dni_P");
+ * c.Parameters.Add(p);
+ * 
+ */
