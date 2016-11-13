@@ -196,15 +196,25 @@ namespace EjercicioDataSet
         private void btn_MPCPCSL_Click(object sender, EventArgs e)
         {
             this.ActualizarLista();
-            foreach (DataRow fila in MiBase.Tables["Productos"].Rows)
+            foreach (DataRow fila in  this._dtProductos.Rows)
             {
-               
+
+
+                DataRow  filaPadre = fila.GetParentRow("Fk_Productos_Proveedores");
+
+                DataRow  filaPadre2 = filaPadre.GetParentRow("Fk_Proveedores_Localidad");
+
+
+                this.lst_lista.Items.Add(fila["IdProductos"].ToString() + " - " + fila["Descripcion"].ToString() + " - " + filaPadre["Nombre"].ToString() + " - " + filaPadre2["Localidad"].ToString());
+
+
             }
         }
 
         private void btn_MPDLLIEET_Click(object sender, EventArgs e)
         {
             this.ActualizarLista();
+
             DataRow[] filaLocalidad = MiBase.Tables["Localidades"].Select("Localidad = '" + txtFiltro.Text + "'");
             DataRow[] filashijas = filaLocalidad[0].GetChildRows("Fk_Proveedores_Localidad");
             foreach (DataRow f in filashijas)

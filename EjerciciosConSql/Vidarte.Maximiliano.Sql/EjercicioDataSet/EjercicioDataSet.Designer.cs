@@ -122,7 +122,7 @@
             this.gpb_Mostrar.Location = new System.Drawing.Point(206, 12);
             this.gpb_Mostrar.Name = "gpb_Mostrar";
             this.gpb_Mostrar.Size = new System.Drawing.Size(382, 288);
-            this.gpb_Mostrar.TabIndex = 0;
+            this.gpb_Mostrar.TabIndex = 1;
             this.gpb_Mostrar.TabStop = false;
             this.gpb_Mostrar.Text = "Mostrar";
             // 
@@ -157,7 +157,7 @@
             this.btn_MPDLLQ.Location = new System.Drawing.Point(188, 55);
             this.btn_MPDLLQ.Name = "btn_MPDLLQ";
             this.btn_MPDLLQ.Size = new System.Drawing.Size(183, 30);
-            this.btn_MPDLLQ.TabIndex = 3;
+            this.btn_MPDLLQ.TabIndex = 4;
             this.btn_MPDLLQ.Text = "4- Mostrar Proveedores de la localidad \"Quilmes\"";
             this.btn_MPDLLQ.UseCompatibleTextRendering = true;
             this.btn_MPDLLQ.UseVisualStyleBackColor = true;
@@ -168,7 +168,7 @@
             this.btn_MPCPCSL.Location = new System.Drawing.Point(7, 55);
             this.btn_MPCPCSL.Name = "btn_MPCPCSL";
             this.btn_MPCPCSL.Size = new System.Drawing.Size(174, 30);
-            this.btn_MPCPCSL.TabIndex = 2;
+            this.btn_MPCPCSL.TabIndex = 3;
             this.btn_MPCPCSL.Text = "3- Mostrar Productos con Proveedor con su Localidad";
             this.btn_MPCPCSL.UseCompatibleTextRendering = true;
             this.btn_MPCPCSL.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@
             this.btn_MPCSL.Location = new System.Drawing.Point(188, 19);
             this.btn_MPCSL.Name = "btn_MPCSL";
             this.btn_MPCSL.Size = new System.Drawing.Size(183, 30);
-            this.btn_MPCSL.TabIndex = 1;
+            this.btn_MPCSL.TabIndex = 2;
             this.btn_MPCSL.Text = "2- Mostrar Proveedor con su Localidad";
             this.btn_MPCSL.UseCompatibleTextRendering = true;
             this.btn_MPCSL.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.btn_MPCSP.Location = new System.Drawing.Point(7, 19);
             this.btn_MPCSP.Name = "btn_MPCSP";
             this.btn_MPCSP.Size = new System.Drawing.Size(174, 30);
-            this.btn_MPCSP.TabIndex = 0;
+            this.btn_MPCSP.TabIndex = 1;
             this.btn_MPCSP.Text = "1- Mostrar Productos Con su Proveedor";
             this.btn_MPCSP.UseCompatibleTextRendering = true;
             this.btn_MPCSP.UseVisualStyleBackColor = true;
