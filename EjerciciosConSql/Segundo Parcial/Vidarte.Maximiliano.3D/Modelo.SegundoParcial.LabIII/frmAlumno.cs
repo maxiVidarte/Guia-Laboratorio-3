@@ -16,9 +16,7 @@ namespace Modelo.SegundoParcial.LabIII
         public frmAlumno()
         {
             InitializeComponent();
-            cmb_Curso.Items.Add("Java");
-            cmb_Curso.Items.Add("C#");
-            cmb_Curso.Items.Add("Visual Basic");
+           
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

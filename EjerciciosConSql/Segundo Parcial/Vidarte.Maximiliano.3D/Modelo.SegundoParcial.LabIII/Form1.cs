@@ -67,10 +67,10 @@ namespace Modelo.SegundoParcial.LabIII
             SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cnn);
 
             //Creo los comandos para el dataadapter
-            SqlCommand _Select = new SqlCommand("SELECT * FROM Alumnos", conexion);
-            SqlCommand _Insert = new SqlCommand("INSERT into Alumnos(Apellido,Legajo,Curso) values(@Apellido,@Legajo,@Curso)", conexion);
-            SqlCommand _Update = new SqlCommand("UPDATE Alumnos SET Apellido = @Apellido, Curso= @Curso WHERE Legajo = @Legajo", conexion);
-            SqlCommand _Delete = new SqlCommand("DELETE from Alumnos WHERE Legajo = @Legajo", conexion);
+            SqlCommand _Select = new SqlCommand("SELECT * FROM Alumno", conexion);
+            SqlCommand _Insert = new SqlCommand("INSERT into Alumno (Apellido,Legajo,Curso) VALUES (@Apellido,@Legajo,@Curso)", conexion);
+            SqlCommand _Update = new SqlCommand("UPDATE Alumno SET Apellido = @Apellido, Curso= @Curso WHERE Legajo = @Legajo", conexion);
+            SqlCommand _Delete = new SqlCommand("DELETE from Alumno WHERE Legajo = @Legajo", conexion);
 
             //agrego los comandos en el dataadapter
             _dataAdapterAlumnos.SelectCommand = _Select;
@@ -96,16 +96,19 @@ namespace Modelo.SegundoParcial.LabIII
         {
             try
             {
-                DataTable nuevoDt = this.CrearDataTableCursos();
+                
                 if (!File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\CursosEsquema.XML") && !File.Exists(AppDomain.CurrentDomain.BaseDirectory + "\\CursosDatos.XML"))
                 {
+                    DataTable nuevoDt = this.CrearDataTableCursos();
+                    this._dataSetAlumnos_Cursos.Tables.Add(nuevoDt);
                 }
                 else
                 {
+                    DataTable nuevoDt = new DataTable();
                     nuevoDt.ReadXmlSchema(AppDomain.CurrentDomain.BaseDirectory + "\\CursosEsquema.XML");
                     nuevoDt.ReadXml(AppDomain.CurrentDomain.BaseDirectory + "\\CursosDatos.XML");
                 }
-                this._dataSetAlumnos_Cursos.Tables.Add(nuevoDt);
+                
 
                 this.ConfigurarDataAdapter();
                 SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cnn);
@@ -151,9 +154,10 @@ namespace Modelo.SegundoParcial.LabIII
             {
                 DataRow nuevo = this._dataSetAlumnos_Cursos.Tables["dtAlumno"].NewRow();
 
+                nuevo["codCurso"] = ((frmAlta.cmb_Curso.SelectedIndex) * 5 + 1000);
                 nuevo["Apellido"] = frmAlta.txt_Apellido.Text;
                 nuevo["Legajo"] = int.Parse(frmAlta.txt_Legajo.Text);
-                nuevo["codCurso"] = ((frmAlta.cmb_Curso.SelectedIndex) * 5 + 1000);
+               
                 this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows.Add(nuevo);
             }
         }
@@ -193,31 +197,53 @@ namespace Modelo.SegundoParcial.LabIII
             {
                 frm.listBox1.Items.Add(item["Apellido"].ToString() + " - " + item["Legajo"].ToString() + " - " + item["codCurso"].ToString());
             }
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAlumno frm = new frmAlumno();
             frm.Text = "Modificacion de alumno";
-            int bandera = 0;
+            int rownumber = 0;
+
             string legajo = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el legajo que quiere dar de baja", "Baja", "*******");
             foreach (DataRow item in this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows)
             {
+                
                 if (item["Legajo"].ToString() == legajo)
                 {
-                    int indice = int.Parse(item["LEgajo"].ToString());
+                    int indice = int.Parse(item["codCurso"].ToString());
                     frm.txt_Apellido.Text = item["Apellido"].ToString();
                     frm.txt_Legajo.Text = item["Legajo"].ToString();
                     frm.cmb_Curso.SelectedIndex = (indice - 1000) / 5;
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
-                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[indice]["Apellido"] = frm.txt_Apellido.Text;
-                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[indice]["codCurso"] = (frm.cmb_Curso.SelectedIndex * 6) + 1000;
+
+                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[rownumber]["Apellido"] = frm.txt_Apellido.Text;
+                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[rownumber]["codCurso"] = (frm.cmb_Curso.SelectedIndex * 5) + 1000;
 
                     }
                 }
+                rownumber++;
             }
      }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this._dataAdapterAlumnos.Update(this._dataSetAlumnos_Cursos.Tables["dtAlumno"]);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
