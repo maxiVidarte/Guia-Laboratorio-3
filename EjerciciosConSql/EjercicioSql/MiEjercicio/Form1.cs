@@ -198,5 +198,10 @@ namespace MiEjercicio
         {
             this.EliminarDatos();
         }
+
+        private void btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            this.MostrarEstadoFilas(this._dataset);
+        }
     }
 }

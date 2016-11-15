@@ -37,7 +37,7 @@
             this.lstEstados.FormattingEnabled = true;
             this.lstEstados.Location = new System.Drawing.Point(72, 27);
             this.lstEstados.Name = "lstEstados";
-            this.lstEstados.Size = new System.Drawing.Size(120, 95);
+            this.lstEstados.Size = new System.Drawing.Size(423, 95);
             this.lstEstados.TabIndex = 0;
             // 
             // btn_continuar
@@ -53,7 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(580, 262);
             this.Controls.Add(this.btn_continuar);
             this.Controls.Add(this.lstEstados);
             this.Name = "frmEstados";
