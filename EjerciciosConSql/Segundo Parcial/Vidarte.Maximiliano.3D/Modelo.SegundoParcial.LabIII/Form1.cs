@@ -109,7 +109,7 @@ namespace Modelo.SegundoParcial.LabIII
 
                 this.ConfigurarDataAdapter();
                 SqlConnection conexion = new SqlConnection(Properties.Settings.Default.cnn);
-                SqlCommand comando = new SqlCommand("Select * From Alumnos", conexion);
+                SqlCommand comando = new SqlCommand("Select * From Alumno", conexion);
 
                 conexion.Open();
 
@@ -129,7 +129,95 @@ namespace Modelo.SegundoParcial.LabIII
 
         public void EstablecerRelacion()
         {
-            this._dataSetAlumnos_Cursos.Relations.Add("FK_Cursos_Alumnos", this._dataSetAlumnos_Cursos.Tables["Cursos"].Columns["Codigo"], this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Columns["Curso"]);
+            this._dataSetAlumnos_Cursos.Relations.Add("FK_Cursos_Alumnos", this._dataSetAlumnos_Cursos.Tables["Cursos"].Columns["Codigo"], this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Columns["codCurso"]);
         }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumno frmAlta = new frmAlumno();
+            frmAlta.Text = "Alta de alumno";
+            try
+            {
+                foreach (DataRow fila in this._dataSetAlumnos_Cursos.Tables["Cursos"].Rows)
+                {
+                    frmAlta.cmb_Curso.Items.Add(fila["Nombre"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error desconocido: " + ex.Message);
+            }
+            if (frmAlta.ShowDialog() == DialogResult.OK)
+            {
+                DataRow nuevo = this._dataSetAlumnos_Cursos.Tables["dtAlumno"].NewRow();
+
+                nuevo["Apellido"] = frmAlta.txt_Apellido.Text;
+                nuevo["Legajo"] = int.Parse(frmAlta.txt_Legajo.Text);
+                nuevo["codCurso"] = ((frmAlta.cmb_Curso.SelectedIndex) * 5 + 1000);
+                this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows.Add(nuevo);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.TraerDatos();
+            this.EstablecerRelacion();
+        }
+
+        private void bajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int bandera = 0;
+            string legajo = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el legajo que quiere dar de baja", "Baja", "*******");
+            foreach (DataRow item in this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows)
+            {
+                if (item["Legajo"].ToString() == legajo)
+                {
+                    item.Delete();
+                    bandera = 1;
+                    break;
+                }
+            }
+            if (bandera == 0)
+            {
+                MessageBox.Show("No se encontro el legajo");
+            }
+            else
+                MessageBox.Show("Alumno borrado");
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMostrar frm = new frmMostrar();
+           
+            foreach (DataRow item in this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows)
+            {
+                frm.listBox1.Items.Add(item["Apellido"].ToString() + " - " + item["Legajo"].ToString() + " - " + item["codCurso"].ToString());
+            }
+            frm.ShowDialog();
+        }
+
+        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumno frm = new frmAlumno();
+            frm.Text = "Modificacion de alumno";
+            int bandera = 0;
+            string legajo = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el legajo que quiere dar de baja", "Baja", "*******");
+            foreach (DataRow item in this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows)
+            {
+                if (item["Legajo"].ToString() == legajo)
+                {
+                    int indice = int.Parse(item["LEgajo"].ToString());
+                    frm.txt_Apellido.Text = item["Apellido"].ToString();
+                    frm.txt_Legajo.Text = item["Legajo"].ToString();
+                    frm.cmb_Curso.SelectedIndex = (indice - 1000) / 5;
+                    if (frm.ShowDialog() == DialogResult.OK)
+                    {
+                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[indice]["Apellido"] = frm.txt_Apellido.Text;
+                        this._dataSetAlumnos_Cursos.Tables["dtAlumno"].Rows[indice]["codCurso"] = (frm.cmb_Curso.SelectedIndex * 6) + 1000;
+
+                    }
+                }
+            }
+     }
     }
 }

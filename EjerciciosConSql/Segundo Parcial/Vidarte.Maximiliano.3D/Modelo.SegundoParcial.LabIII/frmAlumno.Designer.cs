@@ -143,13 +143,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grb_Datos;
-        private System.Windows.Forms.TextBox txt_Apellido;
-        private System.Windows.Forms.TextBox txt_Legajo;
-        private System.Windows.Forms.ComboBox cmb_Curso;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Aceptar;
         private System.Windows.Forms.Button btn_Cancelar;
+        public System.Windows.Forms.TextBox txt_Apellido;
+        public System.Windows.Forms.TextBox txt_Legajo;
+        public System.Windows.Forms.ComboBox cmb_Curso;
     }
 }
