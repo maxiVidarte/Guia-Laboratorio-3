@@ -143,13 +143,15 @@ namespace Vidarte.Maximiliano
             listBox1.Items.Clear();
             foreach (DataRow item in dsInscripcion.Tables["Matriculas"].Rows)
             {
-                this.listBox1.Items.Add(item["codCurso"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + item["codLocalidad"].ToString());
+                DataRow filaPadre1 = item.GetParentRow("Fk_Matricula_Curso");
+                DataRow filaPadre2 = item.GetParentRow("Fk_Matricula_Localidad");
+                this.listBox1.Items.Add(filaPadre1["Descripcion"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + filaPadre2["Descripcion"].ToString());
             }
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
-           
+            this.dateTimePicker1.Value=DateTime.Now;
             foreach (Control item in this.Gb_ingresodatos.Controls)
             {
                 if (item is TextBox)
