@@ -23,7 +23,7 @@ namespace Vidarte.Maximiliano
             CargarListboxs();
             CargarDtYDs();
             this.dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            this.dateTimePicker1.CustomFormat = " dd/mm/yyyy";
+            this.dateTimePicker1.CustomFormat = " dd/MM/yyyy";
         }
 
         private void Lst_Cursos_SelectedIndexChanged(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace Vidarte.Maximiliano
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            string hola = dateTimePicker1.Value.ToString("dd/mm/yyyy");
+            string hola = dateTimePicker1.Value.ToString("dd/MMMM/yyyy");
             
         }
 
@@ -125,7 +125,7 @@ namespace Vidarte.Maximiliano
         {
             DataRow fila = this.dtMatricula.NewRow();
             fila[0] = this.Lst_Cursos.SelectedIndex;
-            fila[1] = dateTimePicker1.Value.ToString("dd/mm/yyyy");
+            fila[1] = dateTimePicker1.Value.ToString("dd/MM/yyyy");
             fila[2] = this.txt_Alumno.Text;
             if (rdb_Fem.Checked == true)
                 fila[3] = "Femenino";
@@ -139,17 +139,19 @@ namespace Vidarte.Maximiliano
 
         private void btn_mostrar_Click(object sender, EventArgs e)
         {
-
+            
             listBox1.Items.Clear();
             foreach (DataRow item in dsInscripcion.Tables["Matriculas"].Rows)
             {
-                this.listBox1.Items.Add(item["codCurso"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + item["codLocalidad"].ToString());
+                DataRow filaPadre = item.GetParentRow("Fk_Matricula_Curso");
+                DataRow filaPadre2 = item.GetParentRow("Fk_Matricula_Localidad");
+                this.listBox1.Items.Add(filaPadre["Descripcion"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + filaPadre2["Descripcion"].ToString());
             }
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
-           
+            dateTimePicker1.Value = DateTime.Now;
             foreach (Control item in this.Gb_ingresodatos.Controls)
             {
                 if (item is TextBox)
@@ -161,6 +163,41 @@ namespace Vidarte.Maximiliano
                     RadioButton item1 = (RadioButton)item;
                     item1.Checked = false;
                 }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btn__Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            DataRow[] filaLocalidad = dsInscripcion.Tables["Localidades"].Select("Descripcion = '" + txt_IngresoLocalidad.Text + "'");
+            DataRow[] filashijas = filaLocalidad[0].GetChildRows("Fk_Matricula_Localidad");
+            foreach (DataRow f in filashijas)
+            {
+                this.listBox1.Items.Add(f["Alumno"].ToString());
+            }
+        
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            try
+            {
+                string curso = Lst_Cursos.SelectedItem.ToString();
+                DataRow[] filaCurso = dsInscripcion.Tables["Cursos"].Select("Descripcion = '" + curso + "'");
+                DataRow[] filashijas = filaCurso[0].GetChildRows("Fk_Matricula_Curso");
+                foreach (DataRow f in filashijas)
+                {
+                    this.listBox1.Items.Add(f["Alumno"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
             }
         }
 
