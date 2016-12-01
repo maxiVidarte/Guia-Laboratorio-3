@@ -31,7 +31,7 @@ namespace EjemploSQL
             //instancio la conexion
             this._miConexion = new SqlConnection(Properties.Settings.Default.connDBAdapter);
             //instancio el dataset
-            this._ds = new DataSet();
+            this._ds = new DataSet("Clientes");
             //Camino explicado para ingresar el comando
             SqlCommand comando = new SqlCommand();
             comando.CommandText = "Select * from Clientes";
@@ -51,7 +51,7 @@ namespace EjemploSQL
         {
             try
             {
-                this._da.Fill(this._ds, "Clientes");
+                this._da.Fill(this._ds,"Clientes");
                 this.dataGridView1.DataSource = this._ds.Tables["Clientes"];
             }
             catch (Exception ex)
