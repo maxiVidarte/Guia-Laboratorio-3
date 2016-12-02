@@ -87,10 +87,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(127, 56);
+            this.dateTimePicker1.Location = new System.Drawing.Point(127, 51);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // rdb_masc
@@ -99,7 +99,7 @@
             this.rdb_masc.Location = new System.Drawing.Point(226, 119);
             this.rdb_masc.Name = "rdb_masc";
             this.rdb_masc.Size = new System.Drawing.Size(73, 17);
-            this.rdb_masc.TabIndex = 12;
+            this.rdb_masc.TabIndex = 3;
             this.rdb_masc.TabStop = true;
             this.rdb_masc.Text = "Masculino";
             this.rdb_masc.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             this.rdb_Fem.Location = new System.Drawing.Point(127, 119);
             this.rdb_Fem.Name = "rdb_Fem";
             this.rdb_Fem.Size = new System.Drawing.Size(71, 17);
-            this.rdb_Fem.TabIndex = 11;
+            this.rdb_Fem.TabIndex = 2;
             this.rdb_Fem.TabStop = true;
             this.rdb_Fem.Text = "Femenino";
             this.rdb_Fem.UseVisualStyleBackColor = true;
@@ -128,14 +128,14 @@
             this.txt_direccion.Location = new System.Drawing.Point(127, 143);
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(196, 20);
-            this.txt_direccion.TabIndex = 9;
+            this.txt_direccion.TabIndex = 4;
             // 
             // txt_Alumno
             // 
             this.txt_Alumno.Location = new System.Drawing.Point(127, 84);
             this.txt_Alumno.Name = "txt_Alumno";
             this.txt_Alumno.Size = new System.Drawing.Size(196, 20);
-            this.txt_Alumno.TabIndex = 8;
+            this.txt_Alumno.TabIndex = 1;
             // 
             // txt_curso
             // 
@@ -143,7 +143,7 @@
             this.txt_curso.Location = new System.Drawing.Point(127, 25);
             this.txt_curso.Name = "txt_curso";
             this.txt_curso.Size = new System.Drawing.Size(196, 20);
-            this.txt_curso.TabIndex = 6;
+            this.txt_curso.TabIndex = 2;
             // 
             // label1
             // 
@@ -296,7 +296,7 @@
             this.btn_mostrar.Location = new System.Drawing.Point(495, 16);
             this.btn_mostrar.Name = "btn_mostrar";
             this.btn_mostrar.Size = new System.Drawing.Size(178, 41);
-            this.btn_mostrar.TabIndex = 1;
+            this.btn_mostrar.TabIndex = 0;
             this.btn_mostrar.Text = "todos los alumnos";
             this.btn_mostrar.UseVisualStyleBackColor = true;
             this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
@@ -317,37 +317,40 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "todos los alumnos con antiguedad superior a dos años";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_
             // 
             this.btn_.Location = new System.Drawing.Point(499, 71);
             this.btn_.Name = "btn_";
             this.btn_.Size = new System.Drawing.Size(174, 41);
-            this.btn_.TabIndex = 4;
+            this.btn_.TabIndex = 1;
             this.btn_.Text = "alumnos por localidad ingresada mediante un inputbox";
             this.btn_.UseVisualStyleBackColor = true;
+            this.btn_.Click += new System.EventHandler(this.btn__Click);
             // 
             // txt_IngresoLocalidad
             // 
             this.txt_IngresoLocalidad.Location = new System.Drawing.Point(679, 82);
             this.txt_IngresoLocalidad.Name = "txt_IngresoLocalidad";
             this.txt_IngresoLocalidad.Size = new System.Drawing.Size(185, 20);
-            this.txt_IngresoLocalidad.TabIndex = 5;
+            this.txt_IngresoLocalidad.TabIndex = 4;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(499, 125);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 46);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
+            this.button2.Size = new System.Drawing.Size(174, 50);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Alumnos inscriptos en un curso en particular (seleccionado mediante un ComboBox)";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 407);
+            this.ClientSize = new System.Drawing.Size(1362, 407);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txt_IngresoLocalidad);
             this.Controls.Add(this.btn_);
