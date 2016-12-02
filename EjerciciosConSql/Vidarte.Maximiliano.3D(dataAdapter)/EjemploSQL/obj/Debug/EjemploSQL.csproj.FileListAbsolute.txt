@@ -20,11 +20,11 @@ C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.3D(data
 C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.Properties.Resources.resources
 C:\Users\alumno.LAB4PC\Desktop\maxi\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.csproj.GenerateResource.Cache
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\bin\Debug\EjemploSQL.exe.config
-C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.exe
-C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.pdb
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\bin\Debug\EjemploSQL.exe
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\bin\Debug\EjemploSQL.pdb
-C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.csprojResolveAssemblyReference.cache
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.Form1.resources
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.FrmEstados.resources
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.Properties.Resources.resources
 C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.csproj.GenerateResource.Cache
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.exe
+C:\Users\Casa\Desktop\Guia-Laboratorio-3\EjerciciosConSql\Vidarte.Maximiliano.3D(dataAdapter)\EjemploSQL\obj\Debug\EjemploSQL.pdb

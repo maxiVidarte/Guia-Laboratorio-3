@@ -31,10 +31,10 @@ namespace EjemploSQL
             //instancio la conexion
             this._miConexion = new SqlConnection(Properties.Settings.Default.connDBAdapter);
             //instancio el dataset
-            this._ds = new DataSet("Clientes");
+            this._ds = new DataSet("Canutos");
             //Camino explicado para ingresar el comando
             SqlCommand comando = new SqlCommand();
-            comando.CommandText = "Select * from Clientes";
+            comando.CommandText = "Select * from Canutos";
             comando.Connection = this._miConexion;
             //instancio el dataadapter
             this._da = new SqlDataAdapter(comando);
@@ -51,13 +51,34 @@ namespace EjemploSQL
         {
             try
             {
-                this._da.Fill(this._ds,"Clientes");
-                this.dataGridView1.DataSource = this._ds.Tables["Clientes"];
+                this._da.Fill(this._ds,"Canutos");
+                this.dataGridView1.DataSource = this._ds.Tables["Canutos"];
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //this._ds.Tables["Canutos"];
+            this._da.Update(this._ds);
+        }
+
+        private void verEstadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEstados frm = new FrmEstados();
+            frm.Text = "Estado de las filas";
+
+            int contador = 0;
+
+            foreach (DataRow fila in _ds.Tables[0].Rows)
+            {
+                frm.listBox1.Items.Add("Fila: " + contador + "Estado: " + fila.RowState.ToString());
+                contador ++;
+            }
+            frm.ShowDialog();
         }
     }
 }
