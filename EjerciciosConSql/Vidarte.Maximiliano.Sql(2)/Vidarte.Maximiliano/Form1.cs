@@ -143,25 +143,20 @@ namespace Vidarte.Maximiliano
             listBox1.Items.Clear();
             foreach (DataRow item in dsInscripcion.Tables["Matriculas"].Rows)
             {
-<<<<<<< HEAD
+
                 DataRow filaPadre1 = item.GetParentRow("Fk_Matricula_Curso");
                 DataRow filaPadre2 = item.GetParentRow("Fk_Matricula_Localidad");
                 this.listBox1.Items.Add(filaPadre1["Descripcion"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + filaPadre2["Descripcion"].ToString());
-=======
-                DataRow filaPadre = item.GetParentRow("Fk_Matricula_Curso");
-                DataRow filaPadre2 = item.GetParentRow("Fk_Matricula_Localidad");
-                this.listBox1.Items.Add(filaPadre["Descripcion"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + filaPadre2["Descripcion"].ToString());
->>>>>>> origin/master
+                //DataRow filaPadre = item.GetParentRow("Fk_Matricula_Curso");
+                //DataRow filaPadre2 = item.GetParentRow("Fk_Matricula_Localidad");
+                //this.listBox1.Items.Add(filaPadre["Descripcion"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Alumno"].ToString() + " - " + item["Sexo"].ToString() + " - " + item["Direccion"].ToString() + " - " + filaPadre2["Descripcion"].ToString());
             }
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             this.dateTimePicker1.Value=DateTime.Now;
-=======
             dateTimePicker1.Value = DateTime.Now;
->>>>>>> origin/master
             foreach (Control item in this.Gb_ingresodatos.Controls)
             {
                 if (item is TextBox)
